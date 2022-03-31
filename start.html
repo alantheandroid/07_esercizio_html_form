@@ -9,8 +9,8 @@
     <title>Lezione HTML</title>
 
 	<style>
-		div {
-			display: grid; margin-right: 35%; margin-left: 35%; text-align: center;
+		form {
+			display: block; text-align: center;
 		}
 						
 	</style>
@@ -49,15 +49,15 @@
 		<br>
 		<hr>
 		<div>
-			<p>Scegli il tuo abbonamento:</p>
-			<input type="radio" name="plan" id="free" value="Free" />
-			<label for="free"><small><del>€9,99/mese</del></small><br><em>Free</em></label><br>
-			<input type="radio" name="plan" id="standard" value="Standard" />
-			<label for="standard">€15,99/mese<br><em>Standard</em></label><br>
-			<input type="radio" name="plan" id="plus" value="Plus" />
-			<label for="standard">€25,99/mese<br><em>Plus</em></label><br>
-			<input type="radio" name="plan" id="unlimited" value="Ultimate" />
-			<label for="standard">€250/anno<br><em>Ultimate</em></label><br>
+			<label for="plan">Scegli il tuo abbonamento:</label>
+			<select name="plan" id="plan">
+				<option value="free">Free</option>
+				<optgroup label="A pagamento">
+					<option value="standard">Standard: €15,99/mese</option>
+					<option value="plus">Plus: €25,99/mese</option>
+					<option value="unlimited">Unlimited: 250/anno</option>
+				</optgroup>
+			</select>
 		</div>
 		<div>
 			<p><label for="pro">Vuoi aggiungere la vantaggiosa opzione Pro?</label>
@@ -69,6 +69,9 @@
 			<input type="tel" name="ccn" id="ccn" />
 			<label for="cvc">CVC</label>
 			<input type="tel" name="cvc" id="cvc" />
+		</div>
+		<br>
+		<div>
 			<label for="expdate">Scadenza</label>
 			<input type="tel" name="expdate" id="expdate" />
 			<label for="address">Indirizzo di fatturazione</label>
