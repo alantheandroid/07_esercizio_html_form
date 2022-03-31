@@ -1,19 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <title>Lezione HTML</title>
+
 	<style>
-		label {
-			display: block
+		div {
+			display: grid; margin-right: 35%; margin-left: 35%; text-align: center;
 		}
+						
 	</style>
 </head>
 
 <body>
+	
+	<form action="">
+		<div>
+			<label for="email">Indirizzo e-mail</label>
+			<input type="email" name="email" id="email" />
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" />
+		</div>
+		<br>
+		<div>
+			<label for="firstname">Nome</label>
+			<input type="text" name="firstname" id="firstname" />
+		</div>
+		<div>
+			<label for="lastname">Cognome</label>
+			<input type="text" name="lastname" id="lastname" />
+		</div>
+		<br>
+		<div>
+			<label for="birthday">Data di nascita</label>
+			<input type="date" name="birthday" id="birthday" min="1939-01-01" max="2004-01-01" />
+		</div>
+		<br>
+		<div>
+			<label for="phone">Telefono</label>
+			<input type="tel" name="phone" id="phone" />
+		</div>
+		<br>
+		<hr>
+		<div>
+			<p>Scegli il tuo abbonamento:</p>
+			<input type="radio" name="plan" id="free" value="Free" />
+			<label for="free"><small><del>€9,99/mese</del></small><br><em>Free</em></label><br>
+			<input type="radio" name="plan" id="standard" value="Standard" />
+			<label for="standard">€15,99/mese<br><em>Standard</em></label><br>
+			<input type="radio" name="plan" id="plus" value="Plus" />
+			<label for="standard">€25,99/mese<br><em>Plus</em></label><br>
+			<input type="radio" name="plan" id="unlimited" value="Ultimate" />
+			<label for="standard">€250/anno<br><em>Ultimate</em></label><br>
+		</div>
+		<div>
+			<p><label for="pro">Vuoi aggiungere la vantaggiosa opzione Pro?</label>
+			<input type="checkbox" name="pro" id="pro" /></p>
+		</div>
+		<hr>
+		<div>
+			<label for="ccn">Numero carta:</label>
+			<input type="tel" name="ccn" id="ccn" />
+			<label for="cvc">CVC</label>
+			<input type="tel" name="cvc" id="cvc" />
+			<label for="expdate">Scadenza</label>
+			<input type="tel" name="expdate" id="expdate" />
+			<label for="address">Indirizzo di fatturazione</label>
+			<input type="text" name="address" id="address">
+		</div>
+		<br>
+		<div>
+			<button type="submit">Invia</button>
+		</div>
+	</form>
 
 </body>
 
